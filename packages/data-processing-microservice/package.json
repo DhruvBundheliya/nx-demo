@@ -1,6 +1,6 @@
 {
   "name": "@demo/data-processing-microservice",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "dist/index.js",
   "private": true,
   "types": "dist/index.d.ts",
