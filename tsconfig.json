@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@yourcompany/*": ["packages/*/src"]
+    },
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["packages/*/src"]
+}
