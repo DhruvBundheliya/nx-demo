@@ -1,3 +1,14 @@
+## 1.2.1 (2024-05-22)
+
+
+### 🩹 Fixes
+
+- **DATA-PROCESSING:** Introducing README.md ([9cb7a1f](https://github.com/DhruvBundheliya/nx-demo/commit/9cb7a1f))
+
+### ❤️  Thank You
+
+- Dhruv Bundheliya
+
 ## 1.2.0 (2024-05-22)
 
 
