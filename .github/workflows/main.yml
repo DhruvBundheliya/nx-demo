@@ -1,0 +1,20 @@
+name: Action
+run-name: I don't know
+
+permissions:
+  id-token: write
+  contents: read
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    env:
+      stage: ${{ inputs.environment }}
+    steps:
+     - name: Validate and Apply Scribe Secrets
+       run: |
+          echo '${{ vars.SECRET }}' > secret.json
