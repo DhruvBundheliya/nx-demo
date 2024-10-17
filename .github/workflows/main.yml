@@ -12,8 +12,14 @@ jobs:
   Setup:
     name: Setup
     runs-on: ubuntu-latest
-    env:
-      stage: ${{ inputs.environment }}
+    steps:
+     - name: Validate and Apply Scribe Secrets
+       run: |
+          echo '${{ vars.REPO_SECRET }}' > secret.json
+  Setup2:
+    name: Setup2
+    runs-on: ubuntu-latest
+    environment: Prod
     steps:
      - name: Validate and Apply Scribe Secrets
        run: |
