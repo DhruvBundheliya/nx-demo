@@ -13,7 +13,7 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     steps:
-     - name: Validate and Apply Scribe Secrets
+     - name: Validate and Apply Secrets
        run: |
           echo '${{ vars.REPO_SECRET }}' > secret.json
   Setup2:
@@ -21,6 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: Prod
     steps:
-     - name: Validate and Apply Scribe Secrets
+     - name: Validate and Apply Secrets
        run: |
           echo '${{ vars.SECRET }}' > secret.json
